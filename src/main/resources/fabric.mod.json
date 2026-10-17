@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "donut-client",
+  "version": "${version}",
+  "name": "Donut Client",
+  "description": "A utility mod for singleplayer Minecraft 1.21.11.\nModules: crystal, combat, misc, render, client and movement tweaks with a clean ClickGUI.",
+  "authors": [
+    "donut"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.donut.DonutClient"
+    ]
+  },
+  "mixins": [
+    "donut.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
